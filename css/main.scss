@@ -1,0 +1,24 @@
+//colors
+$black: #000;
+$yellow: #f9b43b;
+
+//normalize
+@import "./normalize.scss";
+
+//setups
+@import "./layouts.scss";
+@import "./fonts.scss";
+
+//blocks
+@import "./blocks/hero.scss";
+@import "./blocks/best.scss";
+@import "./blocks/team.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/map.scss";
+@import "./blocks/menu.scss";
+
+//common
+@import "./blocks/common/btn.scss";
+@import "./blocks/common/fixed-menu.scss";
+@import "./blocks/common/title.scss";
+
