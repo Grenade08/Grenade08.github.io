@@ -1,0 +1,62 @@
+.best{
+    background: url(/section_best/bg/bg.png) center no-repeat;
+    background-size:cover; 
+}
+
+.best__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.best__heading{
+    margin-bottom: 31px;
+}
+
+.best__heading-title{
+    color: #2f3234;
+}
+
+.best__list{
+    display: flex;  
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+}
+
+.best__item{
+    flex: 1;
+    padding: 0 10px;
+}
+
+.best__icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+.best__desc{
+    color: #2f3234;
+    text-align: center;
+}
+
+.best__title{
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    font-size: 24px;
+    font-family: 'Lifehack';
+    margin-bottom: 14px;
+    letter-spacing: -0.6px;
+    line-height: 28.14px;
+}
+
+.best__content{
+    opacity: 0.8;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+    @include ubuntu($style: light);
+}

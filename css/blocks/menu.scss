@@ -1,0 +1,65 @@
+.menu{
+    background-image: url(/section_menu/bg.jpg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.menu__content{
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+}
+
+.menu__title{
+    color: #fff;
+    top: 110px;
+    position: absolute;
+    left: 110px;
+}
+
+.menu__list{
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    display: flex;
+    height: 100%;
+}
+
+.menu__item{
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+
+}
+
+.menu__action{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 100%;
+}
+
+.menu__subtitle{
+    font-family: 'Gagalin';
+    color: #fff;
+    font-size: 40px;
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    padding-top: 20px;
+}
+
+.menu__accordeon-wrap{
+    padding: 50px 40px 0;
+    align-items: center;
+    background-color: rgba($color: #202020, $alpha: 0.9);
+    width: 540px;
+    @include ubuntu($style: light);
+    line-height: 24px;
+}
+
+.menu__accordeon-text{
+    color: #fff;
+}
