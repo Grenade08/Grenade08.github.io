@@ -1,0 +1,105 @@
+.order{
+    display: flex;
+    background: url(/section_order/logos.png), url(/section_order/bg.jpg);
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat no-repeat;
+}
+
+.order-column{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order__title{
+    color: $yellow;
+    display: flex;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+}
+
+.form__content{
+    flex: 1;
+    margin-left: 20px;
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.form__row{
+    display: flex;
+    margin-bottom: 15px;
+    &:after{
+        margin-bottom: 25px;
+    }
+}
+
+.form__block-title{
+    font-size: 14px;
+    @include ubuntu($style: light);
+    color: #fff;
+}
+
+.form__radio-desc{
+    @include ubuntu($style: light);
+    color: #fff;
+    margin-left: 8px;
+}
+
+.form__block{
+    flex: 1;
+    margin-left: 20px;
+    &:first-child{
+    margin-left: 0;
+    }
+}
+
+.form__block-input{
+    border: 1px solid #d1cfcb;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px;
+}
+
+.form__block-input--textarea{
+    height: 100px;
+    resize: none;
+}
+
+.form__radio{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    &:first-child{
+        margin-left: 0;
+    }
+}
+
+.form__radio-choose{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__radio-choose::before{
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #e35028;
+    transition: 1s;
+}
+
+/*.control__input:checked + .control__radio::before {
+    height: 7px;
+}*/
+
+.btn_bg_none{
+    background-color: transparent;
+}
