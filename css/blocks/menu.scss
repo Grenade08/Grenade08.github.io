@@ -14,9 +14,9 @@
 
 .menu__title{
     color: #fff;
-    top: 110px;
+    top: rem(110px);
     position: absolute;
-    left: 110px;
+    left: rem(110px);
 }
 
 .menu__list{
@@ -32,32 +32,65 @@
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
+}
 
+.menu__item.active{
+    @include phones {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
 }
 
 .menu__action{
+    background-size: cover;
     display: flex;
     justify-content: center;
-    width: 80px;
+    width: rem(80px);
     height: 100%;
+    position: relative;
+    @include phones {
+        width: rem(80px);
+    }
+}
+
+.menu__action::before{
+    content: "";
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 30, 30, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .menu__subtitle{
     font-family: 'Gagalin';
     color: #fff;
-    font-size: 40px;
+    font-size: rem(40px);
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
-    padding-top: 20px;
+    padding-top: rem(20px);
+}
+
+.menu__accordeon{
+    overflow: hidden;
+    width: 0;
 }
 
 .menu__accordeon-wrap{
-    padding: 50px 40px 0;
+    padding: rem(50px) rem(40px) 0;
     align-items: center;
     background-color: rgba($color: #202020, $alpha: 0.9);
-    width: 540px;
+    width: rem(540px);
     @include ubuntu($style: light);
-    line-height: 24px;
+    line-height: rem(24px);
+    height: 100%;
+
 }
 
 .menu__accordeon-text{

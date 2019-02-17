@@ -2,6 +2,7 @@
     display: flex;
     justify-content: flex-end;
     background-image: url(/section_team/bg.jpg);
+    background-position: center;
     background-size: cover;
 }
 
@@ -13,22 +14,41 @@
     height: inherit;
     justify-content: flex-start;
     position: absolute;
-    padding: 115px 0 0 100px;
+    padding: rem(115px) 0 0 rem(100px);
+    @include tablets{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+.team__wrap{
+    @include tablets{
+        text-align: center;
+    }
 }
 
 .team__title{
     color: $yellow;
-    width: 345px;
+    width: rem(345px);
+    margin-bottom: 26px;
 }
 
 .accordeon__list{
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    width: 345px;
+    width: rem(345px);
+}
+
+.accordeon__item{
+    margin-bottom: 20px;
 }
 
 .accordeon__label{
+    height: 0;
     overflow: hidden;
 }
 
@@ -37,49 +57,64 @@
     align-items: center;
     &:before{
         content: "";
-        border: 6px solid transparent;
-        border-top: 6px solid #f9b43b;
-        margin-right: 10px;
+        border: rem(6px) solid transparent;
+        border-top: rem(6px) solid #f9b43b;
+        margin-right: rem(10px);
+    }
+    @include tablets{
+        display: inline-flex;
     }
 }
 
 .subtitle{
     font-family: 'Gagalin';
     color: #fff;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+    @include phones{
+        font-size: 20px;
+    }
 }
 
 .accordeon__content{
-    padding-bottom: 20px;
+    padding-bottom: rem(20px);
 }
 
 .teammate{
     display: flex;
+    @include tablets{
+        flex-direction: column;
+    }
 }
 
 .teammate__icon-img{
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
 }
 
 .teammate__info{
-    margin-left: 20px;
+    margin-left: rem(20px);
+    @include tablets{
+        margin-left: 0;
+    }
 }
 
 .teammate__title{
     font-family: 'Ubuntu';
     color: #fff;
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 }
 
 .teammate__desc{
     color: #fff;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
+    @include phones{
+        padding: 0 2%;
+    }
 }

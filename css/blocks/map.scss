@@ -1,55 +1,76 @@
-.map__wrap{
+.map__wrap {
     background-image: url(/section__contacts/map.jpg);
     height: 100%;
     background-size: cover;
 }
 
-.map__footer{
+.map__footer {
     position: absolute;
     bottom: 0;
     background: #000;
     width: 100%;
 }
 
-.footer{
-    height: 60px;
+.footer {
+    min-height: rem(60px);
+    padding: rem(5px) 0;
 }
 
-.footer__container{
+.footer__container {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    @include phones{
+        flex-direction: column;
+    }
 }
 
-.address{
+.address {
     @include ubuntu($style: light);
     color: #fff;
 }
 
-.phone{
+.phone {
     display: flex;
     align-items: center;
     color: #e45028;
-    line-height: 24px;
+    line-height: rem(24px);
 }
 
-.phone__icon{
-    width: 11px;
-    height: 11px;
-    margin-right: 10px;
+.phone__icon {
+    width: rem(11px);
+    height: rem(11px);
+    margin-right: rem(10px);
 }
 
-.socials__list{
+.socials__list {
     display: flex;
     align-items: center;
 }
 
+.socials__item {
+    margin-left: rem(20px);
+    &:first-child {
+    margin-left: 0;
+    }
+}
+
 .socials__icon {
-    margin-left: 20px;
-    width: 20px;
-    height: 20px;
+    width: rem(22px);
+    height: rem(22px);
     fill: grey;
-    &:hover{
+    &:hover {
         fill: #fff;
+    }
+}
+
+.contacts{
+    @include phones {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
     }
 }
