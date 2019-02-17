@@ -1,3 +1,15 @@
+html {
+  font-size: 14px;
+
+  @include tablets() {
+    font-size: 13px;
+  }
+
+  @include phones() {
+    font-size: 12px;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -16,15 +28,15 @@ body {
 .container {
   margin: 0 auto;
   position: relative;
-  width: 940px;
-  // width: 95%;
+  max-width: 940px;
+  width: 95%;
   display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 940px + 20px;
   min-height: 100%;
   overflow: hidden;
 }
