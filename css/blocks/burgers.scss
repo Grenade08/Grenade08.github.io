@@ -1,7 +1,50 @@
 .burgers{
     background-image: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%);
+    display: flex;
 }
 
 .burgers__container{
+    justify-content: center;
+}
+
+.burgers__wrap{
+    display: flex; 
+}
+
+.kcals{
+    background-image: url(/section_burgers/kkal.png);
+    width: 60px;
+    height: 76px;
+}
+
+.burgers-text{
     display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.burgers-text__title{
+    line-height: 0.89;
+    margin-bottom: rem(56px);
+}
+
+.burgers__content-desc{
+    @include ubuntu($style: light);
+    margin-bottom: rem(36px);
+}
+
+.burgers__order{
+    display: flex;
+    align-items: baseline;
+}
+
+.burgers__price{
+    font-family: 'Gagalin';
+    font-size: rem(30px);
+    color: #e35028;
+}
+
+.burgers__btn{
+    margin-left: 29px;
 }

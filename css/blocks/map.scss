@@ -14,6 +14,9 @@
 .footer {
     min-height: rem(60px);
     padding: rem(5px) 0;
+    @include phones{
+        padding: rem(20px) 0;
+    }
 }
 
 .footer__container {
@@ -29,6 +32,7 @@
 .address {
     @include ubuntu($style: light);
     color: #fff;
+    font-style: normal;
 }
 
 .phone {
@@ -39,14 +43,18 @@
 }
 
 .phone__icon {
-    width: rem(11px);
-    height: rem(11px);
-    margin-right: rem(10px);
+    width: rem(15px);
+    height: rem(15px);
+    margin-right: rem(5px);
 }
 
 .socials__list {
     display: flex;
     align-items: center;
+}
+
+.social__link{
+    display: flex;
 }
 
 .socials__item {
@@ -57,8 +65,8 @@
 }
 
 .socials__icon {
-    width: rem(22px);
-    height: rem(22px);
+    width: rem(24px);
+    height: rem(24px);
     fill: grey;
     &:hover {
         fill: #fff;

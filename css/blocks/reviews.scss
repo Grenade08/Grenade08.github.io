@@ -57,6 +57,9 @@
     font-family: 'Gagalin';
     margin-bottom: rem(18px);
     font-size: rem(14px);
+    @include phones{
+        font-size: rem(30px);
+    }
 }
 
 .reviews__text{
@@ -79,3 +82,20 @@
         background: #1f2122;
     }
 }
+
+.btn-desktop{
+    @include phones{
+        display: none;
+    }
+}   
+
+.btn-phones{
+    display: none;
+    @include phones{
+        display: flex; 
+        justify-content: center;
+    }
+}
+
+
+

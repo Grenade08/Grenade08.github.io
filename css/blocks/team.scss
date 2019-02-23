@@ -71,8 +71,11 @@
     color: #fff;
     font-size: rem(14px);
     margin-bottom: rem(10px);
+    @include tablets{
+        font-size: rem(30px);
+    }
     @include phones{
-        font-size: 20px;
+        font-size: rem(20px);
     }
 }
 
