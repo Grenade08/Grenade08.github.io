@@ -11,6 +11,71 @@
     display: flex; 
 }
 
+.component{
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+
+.component__burgers{
+    width: rem(90px);
+    height: rem(90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: rem(5px);
+    background-color: #f08c33;
+    opacity: 0.8;
+}
+
+.component__text{
+    font-family: 'Gagalin';
+    font-size: 14px;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.component:hover .component__drop{ 
+    right: 0;
+}
+
+.component__drop{
+    content:'';
+    position: relative;
+    right: -9999px;
+    width: rem(270px);
+    opacity: 0.9;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Ubuntu';
+}
+
+.list__drop{
+    display: flex;
+    flex-direction: column;
+    padding: 18px 0 0 22px;
+}
+
+.list__drop-ingridients{
+    display: flex;
+    margin-bottom: rem(18px);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.list__drop-name{
+    text-align: left;
+}
+
+.list__drop-weight{
+    justify-content: flex-end;
+    margin-right: 25px;
+}
+
 .kcals{
     background-image: url(/section_burgers/kkal.png);
     width: 60px;
@@ -42,6 +107,12 @@
 .burgers__price{
     font-family: 'Gagalin';
     font-size: rem(30px);
+    color: #e35028;
+}
+
+.burgers__currency{
+    font-family: 'Gagalin';
+    font-size: rem(35px); 
     color: #e35028;
 }
 
