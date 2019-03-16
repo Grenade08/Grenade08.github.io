@@ -465,7 +465,7 @@ section_centered { display: -webkit-box; display: -ms-flexbox; display: flex; -w
 
 .component__text { font-family: 'Gagalin'; font-size: 14px; letter-spacing: normal; color: #fff; }
 
-.component:hover .component__drop { left: 91px; }
+.component:hover .component__drop { left: 90px; }
 
 .component__drop { content: ''; position: absolute; right: -9999px; width: 19.28571rem; opacity: 0.9; border-radius: 5px; background-color: #ffffff; color: #000; font-size: 14px; font-family: 'Ubuntu'; }
 
@@ -507,9 +507,7 @@ section_centered { display: -webkit-box; display: -ms-flexbox; display: flex; -w
 
 .slider__control_prev { position: absolute; top: 206px; right: -40px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
 
-.arrow-right__icon { width: 30px; height: 15px; }
-
-.arrow-left__icon { width: 30px; height: 15px; }
+.arrow__icon { width: 30px; height: 15px; }
 
 .hamburger-menu-link { vertical-align: middle; position: relative; height: 1.57143rem; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 2.14286rem; display: -webkit-box; display: -ms-flexbox; display: flex; display: none; }
 
