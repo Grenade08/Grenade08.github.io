@@ -339,7 +339,7 @@ section_centered { display: -webkit-box; display: -ms-flexbox; display: flex; -w
 
 .phone { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; color: #e45028; line-height: 1.71429rem; }
 
-.phone__icon { width: 1.07143rem; height: 1.07143rem; margin-right: 0.35714rem; }
+.phone__icon { width: 1.07143rem; height: 1.07143rem; margin-right: 0.35714rem; margin-top: 0.35714rem; }
 
 .socials__list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -453,29 +453,41 @@ section_centered { display: -webkit-box; display: -ms-flexbox; display: flex; -w
 
 .burgers { background-image: -webkit-gradient(linear, left bottom, left top, from(#f9b43b), color-stop(48%, #eb8c38), color-stop(74%, #f9b43b)); background-image: -webkit-linear-gradient(bottom, #f9b43b, #eb8c38 48%, #f9b43b 74%); background-image: -o-linear-gradient(bottom, #f9b43b, #eb8c38 48%, #f9b43b 74%); background-image: linear-gradient(to top, #f9b43b, #eb8c38 48%, #f9b43b 74%); display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.burgers__container { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+.burgers__wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.burgers__wrap { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.component { position: relative; top: 0; display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.component { position: absolute; top: 0; display: -webkit-box; display: -ms-flexbox; display: flex; }
+.component__burgers { width: 6.42857rem; height: 6.42857rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 0.35714rem; background-color: #f08c33; opacity: 0.8; position: absolute; }
 
-.component__burgers { width: 6.42857rem; height: 6.42857rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 0.35714rem; background-color: #f08c33; opacity: 0.8; }
+.component__burgers:hover { background-color: #e35028; }
+
+.component__icon { width: 3.28571rem; height: 3.21429rem; margin-bottom: 0.28571rem; }
 
 .component__text { font-family: 'Gagalin'; font-size: 14px; letter-spacing: normal; color: #fff; }
 
-.component:hover .component__drop { right: 0; }
+.component:hover .component__drop { left: 91px; }
 
-.component__drop { content: ''; position: relative; right: -9999px; width: 19.28571rem; opacity: 0.9; border-radius: 5px; background-color: #ffffff; color: #000; font-size: 14px; font-family: 'Ubuntu'; }
+.component__drop { content: ''; position: absolute; right: -9999px; width: 19.28571rem; opacity: 0.9; border-radius: 5px; background-color: #ffffff; color: #000; font-size: 14px; font-family: 'Ubuntu'; }
 
 .list__drop { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 18px 0 0 22px; }
 
 .list__drop-ingridients { display: -webkit-box; display: -ms-flexbox; display: flex; margin-bottom: 1.28571rem; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; text-align: center; }
 
-.list__drop-name { text-align: left; }
+.list__drop-desc { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.list__drop-weight { -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; margin-right: 25px; }
+.list__drop-icon { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-.kcals { background-image: url(/section_burgers/kkal.png); width: 60px; height: 76px; }
+.list__drop-name { -webkit-box-flex: 2; -ms-flex: 2; flex: 2; text-align: left; margin-left: 1.07143rem; }
+
+.list__drop-weight { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin-right: 0.5rem; }
+
+.burgers-image { padding-top: 5rem; }
+
+.kcal { background-image: url("/icons/kkal.svg"); width: 60px; height: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding-top: 1.78571rem; opacity: 0.5; position: absolute; }
+
+.kcal__weight { font-size: 20px; font-family: 'Gagalin'; color: #fff; }
+
+.kcal__text { margin-top: 9px; font-family: 'Gagalin'; font-size: 14px; color: #fff; }
 
 .burgers-text { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; color: #fff; margin-left: 15px; }
 
@@ -485,11 +497,19 @@ section_centered { display: -webkit-box; display: -ms-flexbox; display: flex; -w
 
 .burgers__order { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
 
-.burgers__price { font-family: 'Gagalin'; font-size: 2.14286rem; color: #e35028; }
+.burgers__price { margin-right: 10px; color: #e35028; }
 
-.burgers__currency { font-family: 'Gagalin'; font-size: 2.5rem; color: #e35028; }
+.burgers__currency { font-family: 'Gagalin'; font-size: 2.14286rem; color: #e35028; }
 
 .burgers__btn { margin-left: 29px; }
+
+.slider__control_next { position: absolute; top: 206px; left: -40px; -webkit-transform: rotate(90deg); -ms-transform: rotate(90deg); transform: rotate(90deg); }
+
+.slider__control_prev { position: absolute; top: 206px; right: -40px; -webkit-transform: rotate(-90deg); -ms-transform: rotate(-90deg); transform: rotate(-90deg); }
+
+.arrow-right__icon { width: 30px; height: 15px; }
+
+.arrow-left__icon { width: 30px; height: 15px; }
 
 .hamburger-menu-link { vertical-align: middle; position: relative; height: 1.57143rem; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 2.14286rem; display: -webkit-box; display: -ms-flexbox; display: flex; display: none; }
 
