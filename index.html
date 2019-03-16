@@ -99,53 +99,69 @@
             </div>
         </section>
         <section class="burgers section">
-            <div class="container burgers__container">
+            <div class="container">
                 <div class="burgers__wrap">
                     <div class="burgers-block">
                         <div class="component">
                             <div class="component__burgers">
-                                <img src="./icons/burger.svg" alt class="component__icon">
+                                <svg class="component__icon">
+                                    <use xlink:href="/icons/burger.svg#burger"></use>
+                                </svg>
                                 <span class="component__text">Состав</span>
                             </div>
                             <div class="component__drop">
                                 <ul class="list__drop">
                                     <li class="list__drop-ingridients">
-                                        <img src="icons/beef.svg" alt class="list__drop-icon">
-                                        <div class="list__drop-name">Говядина</div>
-                                        <div class="list__drop-weight">300 г</div>
+                                        <div class="list__drop-desc">
+                                            <img src="icons/beef.svg" alt class="list__drop-icon">
+                                            <div class="list__drop-name">Говядина</div>
+                                            <div class="list__drop-weight">300 г</div>
+                                        </div>
                                     </li>
                                     <li class="list__drop-ingridients">
-                                        <img src="icons/buns.svg" alt class="list__drop-icon">
-                                        <div class="list__drop-name">Булочки</div>
-                                        <div class="list__drop-weight">100 г</div>
+                                        <div class="list__drop-desc">
+                                            <img src="icons/buns.svg" alt class="list__drop-icon">
+                                            <div class="list__drop-name">Булочки</div>
+                                            <div class="list__drop-weight">100 г</div>
+                                        </div>
                                     </li>
                                     <li class="list__drop-ingridients">
-                                        <img src="icons/salad.svg" alt class="list__drop-icon">
-                                        <div class="list__drop-name">Зелень</div>
-                                        <div class="list__drop-weight">70 г</div>  
+                                        <div class="list__drop-desc">
+                                            <img src="icons/salad.svg" alt class="list__drop-icon">
+                                            <div class="list__drop-name">Зелень</div>
+                                            <div class="list__drop-weight">70 г</div>
+                                        </div>
                                     </li>
                                     <li class="list__drop-ingridients">
-                                        <img src="icons/sauce.svg" alt class="list__drop-icon">
-                                        <div class="list__drop-name">Соус</div>
-                                        <div class="list__drop-weight">150 г</div>
+                                        <div class="list__drop-desc">
+                                            <img src="icons/sauce.svg" alt class="list__drop-icon">
+                                            <div class="list__drop-name">Соус</div>
+                                            <div class="list__drop-weight">150 г</div>
+                                        </div>
                                     </li>
                                     <li class="list__drop-ingridients">
-                                        <img src="icons/cucumber.svg" alt class="list__drop-icon">
-                                        <div class="list__drop-name">Овощи</div>
-                                        <div class="list__drop-weight">200 г</div>
+                                        <div class="list__drop-desc">
+                                            <img src="icons/cucumber.svg" alt class="list__drop-icon">
+                                            <div class="list__drop-name">Овощи</div>
+                                            <div class="list__drop-weight">200 г</div>
+                                        </div>
                                     </li>
                                     <li class="list__drop-ingridients">
-                                        <img src="icons/cheese.svg" alt class="list__drop-icon">
-                                        <div class="list__drop-name">Сыр</div>
-                                        <div class="list__drop-weight">80 г</div> 
+                                        <div class="list__drop-desc">
+                                            <img src="icons/cheese.svg" alt class="list__drop-icon">
+                                            <div class="list__drop-name">Сыр</div>
+                                            <div class="list__drop-weight">80 г</div>
+                                        </div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="burgers-image">
-                            <img src="./section_burgers/burger2.png" alt="Burgers" class="burgers-image-img">
+                            <img src="./section_burgers/burger2.png" alt="Dark Beef Burger" class="burgers-image-img">
                         </div>
-                        <div class="kcals">
+                        <div class="kcal">
+                            <span class="kcal__weight">1200</span>
+                            <span class="kcal__text">ккал</span>
                         </div>
                     </div>
                     <div class="burgers-text">
@@ -160,6 +176,18 @@
                                 <a href="#" class="button button_bg-orange">Заказать</a>
                             </div>
                         </div>
+                    </div>
+                    <div class="slider__control">
+                        <a href="#" class="slider__control_next">
+                            <svg class="arrow__icon">
+                                <use xlink:href="./icons/arrow-scroll.svg#arrow"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="slider__control_prev">
+                            <svg class="arrow__icon">
+                                <use xlink:href="./icons/arrow-scroll.svg#arrow"></use>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
