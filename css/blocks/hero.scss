@@ -48,7 +48,6 @@
     text-decoration: none;
     display: flex;
     align-items: center;
-    
     &:after {
     content: "";
     width: rem(5px);
@@ -59,7 +58,6 @@
     margin: rem(0px) rem(13px);
     }
 }
-
 
 .menu-list__item{
     &:last-child{    

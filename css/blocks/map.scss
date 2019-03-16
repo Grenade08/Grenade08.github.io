@@ -46,6 +46,7 @@
     width: rem(15px);
     height: rem(15px);
     margin-right: rem(5px);
+    margin-top: rem(5px);
 }
 
 .socials__list {
@@ -53,7 +54,7 @@
     align-items: center;
 }
 
-.social__link{
+.socials__link{
     display: flex;
 }
 
@@ -81,4 +82,12 @@
     align-items: center;
     margin-bottom: 20px;
     }
+}
+
+.contacts__address{
+    display: flex;
+}
+
+.contacts__phone{
+    display: flex;
 }
